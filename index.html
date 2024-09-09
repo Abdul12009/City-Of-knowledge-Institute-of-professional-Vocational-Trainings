@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CITY OF KNOWLEDGE INSTITUTE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-06 at 14.23.49_507eae2b.jpg" alt="City of Knowledge Logo" class="logo">
+            <h1>CITY OF KNOWLEDGE INSTITUTE OF PROFESSIONAL & VOCATIONAL TRAININGS, SHAHEED BENAZIRABAD</h1>
+            <p>Providing IT Courses and Other Vocational Training</p>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-06 at 14.27.24_df883450.jpg" alt="City of Knowledge Banner" class="banner-img">
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <ul id="coursesList">
+                <li data-course="java">1. JAVA DEVELOPER</li>
+                <li data-course="python">2. PYTHON DEVELOPER</li>
+                <li data-course="amazon">3. AMAZON VIRTUAL ASSISTANT</li>
+                <li data-course="office">4. OFFICE AUTOMATION</li>
+                <li data-course="mobile">5. MOBILE REPAIRING COURSE</li>
+                <li data-course="marketing">6. DIGITAL MARKETING & SEO SPECIALIST</li>
+                <li data-course="cyber">7. CYBER SECURITY</li>
+                <li data-course="web">8. WEB DEVELOPER</li>
+            </ul>
+        </div>
+
+        <!-- Section to display course images -->
+        <div class="courses-images" id="courseImagesSection" style="display: none;">
+            <h3>Course Images</h3>
+            <div id="courseImagesContainer"></div>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <section class="article">
+        <div class="container">
+            <h2>Latest Articles</h2>
+            <div id="articlesContainer"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+        <div class="courses-gallery">
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.29_d4809145.jpg" alt="JAVA Developer">
+                <h3>JAVA Developer</h3>
+            </div>
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.30_eba94fa1.jpg" alt="Python Developer">
+                <h3>Python Developer</h3>
+            </div>
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.28_8bf5c29f.jpg" alt="Amazon Virtual Assistant">
+                <h3>Amazon Virtual Assistant</h3>
+            </div>
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.29_4a4caca2.jpg" alt="Office Automation">
+                <h3>Office Automation</h3>
+            </div>
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.28_fe91b110.jpg" alt="Mobile Repairing">
+                <h3>Mobile Repairing Course</h3>
+            </div>
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.27_bf7a08f2.jpg" alt="Digital Marketing & SEO">
+                <h3>Digital Marketing & SEO Specialist</h3>
+            </div>
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.30_bdbd3ab1.jpg" alt="Cyber Security">
+                <h3>Cyber Security</h3>
+            </div>
+            <div class="course-card">
+                <img src="c:\Users\hp\OneDrive\Desktop\abdul razaq data\WhatsApp Image 2024-09-07 at 23.21.31_65a36771.jpg" alt="Web Developer">
+                <h3>Web Developer</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="responseMessage"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 City of Knowledge Institute of Professional & Vocational Trainings, Shaheed Benazirabad. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script src="script.js"></script>
+// Add articles dynamically
+addArticle('Title of Article', 'Content of the article.');
+
+// Add course images dynamically
+addCourseImage('Title of Course', 'path_to_image.jpg');
+
